@@ -3,16 +3,16 @@ Navigation path based Universal Mobile Manipulator Integrated Controller (NUMMIC
 
 ## Overview
 This is a simultaneous controller for mobile manipulator.
+This package is for [ROS](http://wiki.ros.org/ROS/Installation) Melodic.
 
 In order to use this controller, [move_base](http://wiki.ros.org/move_base) & [MoveIt](https://moveit.ros.org/) settings for mobile manipulator must be completed.
 
-This package is for [ROS](http://wiki.ros.org/ROS/Installation) Melodic.
 
 
 ### Author:
 - **[TaeHyeon Kim](https://github.com/QualiaT), qualiatxr@gmail.com**
 
-**Special Thanks: [Myunghyun Kim](https://github.com/kmh8667), [SungWoo Yang](https://github.com/Sungwwoo), [GyeongMin Kim](https://github.com/gmkim97)**
+**Special Thanks: [Myunghyun Kim](https://github.com/kmh8667), [SungWoo Yang](https://github.com/Sungwwoo), [Sangheum Lee](https://github.com/Shumine) and [GyeongMin Kim](https://github.com/gmkim97)**
 
 **Affiliation: [Human-Robot Interaction LAB](https://khu-hri.weebly.com), Kyung Hee Unviersity, South Korea**
 
@@ -43,8 +43,10 @@ $ roslaunch nummic default_pose_cal.launch
 
 ## How to use controller?
 ```
-$ roslaunch nummic controller.launch x:=target_x y:=target_y z:=target_z
+$ roslaunch nummic controller.launch x:={target's x-coordinate} y:={target's y-coordinate} z:={target's z-coordinate}
 ```
 
 ![readme 01](https://user-images.githubusercontent.com/87522493/177284830-962307b5-243c-493a-a0f8-db9e1fe3e9bd.gif)
+  
+  
 ![readme 02](https://user-images.githubusercontent.com/87522493/177284848-cc7ceb9d-b3fa-4624-800f-2bf13dbbe4ee.gif)
