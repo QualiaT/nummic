@@ -1,0 +1,7 @@
+<launch>
+
+    <rosparam file="$(find nummic)/config/controller_param.yaml" />
+
+    <node pkg="nummic" type="default_pose_calculator.py" name="default_pose_calculator" output="screen" />
+
+</launch>

@@ -1,0 +1,56 @@
+# Navigation header frame_id
+/setting/Nav_header_frame: "odom"
+
+# Manipulator's Name & Fixed_frame_id
+/setting/Manipulator_Name: "ur3_manipulator"
+/setting/Manipulator_Fixed_frame: 'base_link'
+
+
+
+################ Controller's parameters ################
+
+# y-axis distance from ground to manipulator's first joint (m)
+/setting/first_joint_height: 0.533
+
+# x-axis distance from mobile_base_link to manipulator_base_link (m)
+/setting/between_base_link: 0.331
+
+# manipulator's recommended reach (m)
+/setting/recommended_reach: 0.45
+
+# width of the mobile robot (m)
+/setting/mobile_robot_width: 0.67
+
+# height of ground to mobile robot's base_link (m)
+/setting/base_link_offset: 0.13
+
+# kP value in orientation_control
+/setting/orientation_kP_value: 0.25
+
+# global path refresh cycle (sec)
+/setting/refresh_cycle: 3
+
+# The step size, in meters, to take between points on a given navigation trajectory
+/setting/granularity: 0.025
+
+
+
+
+
+################ paramters for default pose setting ################
+
+# x-axis distance from manipulator's base link to footprint (m)
+/setting/m_bl_to_ft: 0.169
+
+# manipulation z_max value & z_min value (m)
+/setting/z_max: 0.754
+/setting/z_min: 0.425
+
+
+
+
+
+################ Gripper parameters ################
+
+# The size of the target objects's size (from the center to the outside)
+/setting/target_size: 0

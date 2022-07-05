@@ -1,0 +1,28 @@
+<launch>
+
+    <rosparam file="$(find nummic)/config/controller_param.yaml" />
+
+    <arg name="x" default="0" />
+    <arg name="y" default="0" />
+    <arg name="z" default="0.533" />
+
+    <node pkg="nummic" type="goal_nav.py" name="goal_nav_node" output="screen"/>
+        <param name="target_x" type="double" value="$(arg x)"/>
+        <param name="target_y" type="double" value="$(arg y)"/>
+        <param name="target_z" type="double" value="$(arg z)"/>
+
+    <node pkg="nummic" type="goal_nav_stop_combine.py" name="goal_nav_stop_node" output="screen"/>
+        <param name="target_x" type="double" value="$(arg x)"/>
+        <param name="target_y" type="double" value="$(arg y)"/>
+        <param name="target_z" type="double" value="$(arg z)"/>
+    
+    <node pkg="nummic" type="orientation_check.py" name="orientation_check" output="screen"/>
+        <param name="target_x" type="double" value="$(arg x)"/>
+        <param name="target_y" type="double" value="$(arg y)"/>
+        <param name="target_z" type="double" value="$(arg z)"/>
+
+    <node pkg="nummic" type="curvature_check.py" name="curvature_check" output="screen"/>
+
+    <node pkg="nummic" type="manipulation.py" name="manipulation" output="screen"/>
+
+</launch>

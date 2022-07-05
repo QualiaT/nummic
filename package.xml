@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>nummic</name>
+  <version>1.0.0</version>
+  <description>
+    The nummic package
+  </description>
+  <author email="qualiatxr@gmail.com">TaeHyeon Kim</author>
+  <maintainer email="qualiatxr@gmail.com">TaeHyeon Kim</maintainer>
+
+  <license>MIT</license>
+
+  <url type="website">https://github.com/QualiaT</url>
+  <url type="repository">https://github.com/QualiaT/nummic</url>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <exec_depend>moveit_ros_move_group</exec_depend>
+  <exec_depend>moveit_fake_controller_manager</exec_depend>
+  <exec_depend>moveit_kinematics</exec_depend>
+  <exec_depend>moveit_planners_ompl</exec_depend>
+  <exec_depend>moveit_ros_visualization</exec_depend>
+  <exec_depend>moveit_setup_assistant</exec_depend>
+  <exec_depend>joint_state_publisher</exec_depend>
+  <exec_depend>robot_state_publisher</exec_depend>
+  <exec_depend>tf2_ros</exec_depend>
+  <exec_depend>xacro</exec_depend>
+  <exec_depend>move_base</exec_depend>
+  <exec_depend>rospy</exec_depend>
+
+  <build_depend>husky_ur3_gazebo</build_depend>
+  <build_depend>husky_ur3_gripper_moveit_config</build_depend>
+  <build_export_depend>husky_ur3_gazebo</build_export_depend>
+  <build_export_depend>husky_ur3_gripper_moveit_config</build_export_depend>
+  <exec_depend>husky_ur3_gazebo</exec_depend>
+  <exec_depend>husky_ur3_gripper_moveit_config</exec_depend>
+
+  <export>
+   
+
+  </export>
+</package>
