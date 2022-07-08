@@ -9,7 +9,7 @@
 
 ################ Controller's parameters ################
 
-# y-axis distance from ground to manipulator's first joint (m)
+# z-axis distance from ground to manipulator's first joint (m)
 /setting/first_joint_height: 0.533
 
 # x-axis distance from mobile_base_link to manipulator_base_link (m)
@@ -39,12 +39,12 @@
 
 ################ paramters for default pose setting ################
 
-# x-axis distance from manipulator's base link to footprint (m)
+# x-axis distance from manipulator's base link to front footprint (m)
 /setting/m_bl_to_ft: 0.169
 
 # manipulation z_max value & z_min value (m)
-/setting/z_max: 0.754
-/setting/z_min: 0.425
+/setting/z_max: 0.95
+/setting/z_min: 0.312
 
 
 

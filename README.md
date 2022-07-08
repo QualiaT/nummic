@@ -3,6 +3,7 @@ Navigation path based Universal Mobile Manipulator Integrated Controller (NUMMIC
 
 ## Overview
 This is a simultaneous controller for mobile manipulator.
+
 This package is for [ROS](http://wiki.ros.org/ROS/Installation) Melodic.
 
 In order to use this controller, [move_base](http://wiki.ros.org/move_base) & [MoveIt](https://moveit.ros.org/) settings for mobile manipulator must be completed.
@@ -29,13 +30,13 @@ $ roslaunch nummic default_pose_cal.launch
 
 - Manipulate the end-effector based on the calculated values using MoveIt Commander. In this case, designate the y-coordinate as close to zero as possible.
 
-![01](https://user-images.githubusercontent.com/87522493/177284778-837a73a0-3bdb-47ee-b29d-9f71bf829152.png)
+![01](https://user-images.githubusercontent.com/87522493/178007264-db5bf2b2-34ea-4ba5-bb83-b95b1f3632c4.png)
 
 
 - Click the Joints tab inside the MotionPlanning window and check each joint value.
 - Based on the joint values, add a default pose to the srdf file in your mobile manipulator's 'XXX_gripper_moveit_config/config'
 
-![02](https://user-images.githubusercontent.com/87522493/177284817-4e8b5ce0-08e6-437a-a83b-5dcaaa8d3bab.png)
+![02](https://user-images.githubusercontent.com/87522493/178007282-617a458e-06d9-4590-b7a8-f80089dbb8dd.png)
 
 
 
